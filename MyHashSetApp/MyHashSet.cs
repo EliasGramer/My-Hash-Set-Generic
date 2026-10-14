@@ -42,11 +42,7 @@ public class MyHashSet
         int index = FindIndex(item);
         return index != -1 && _slots[index] != null;
     }
-
-    // TODO: IEnumerable<Lehrperson> implementieren, damit man mit foreach über das Set iterieren kann.
-    // Von hinten nach vorne iterieren (letzter Index zuerst), leere Slots (null) überspringen.
-    // Dazu einen eigenen Enumerator (z.B. MyHashSetEnumerator) schreiben.
-
+    
     /// <summary>Shows every slot, index 0 first, e.g. "[3] Huber Anna, Informatik, 12.03.1980".</summary>
     public override string ToString()
     {
