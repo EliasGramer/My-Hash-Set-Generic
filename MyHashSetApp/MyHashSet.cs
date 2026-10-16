@@ -5,7 +5,7 @@ namespace MyHashSetApp;
 /// Collisions are resolved with linear probing (try the next slot).
 /// Empty slots are null. Starts with 8 slots, doubles when full, up to 32. No Remove.
 /// </summary>
-public class MyHashSet<T>
+public class MyHashSet<T> where T : class
 {
     private const int StartCapacity = 8;
     private const int MaxCapacity = 32;
